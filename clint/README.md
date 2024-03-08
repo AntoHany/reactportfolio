@@ -1,7 +1,5 @@
 # Portfolio
 ---
-![alt text](/src/images/project.jpg)
-
 
 ### Description:
 It is a personal file through which you can view all information about yourself
