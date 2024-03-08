@@ -1,0 +1,21 @@
+.dots{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 120px;
+}
+.dots i{
+    margin: 2px 4px;
+    font-size: 11px;
+    color: #005083;
+}
+.dots-top{
+    top: 0px;
+    left: 0;
+}
+.dots-bottom{
+    bottom: 0px;
+    right: 0;
+}

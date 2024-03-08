@@ -1,0 +1,26 @@
+.special-head{
+    text-align: center;
+    opacity: .6;
+    z-index: 10;
+}
+.special-head h3{
+    margin: 0;
+    padding: 0;
+    font-size: 80px;
+    font-weight: 1000;
+    cursor: default;
+}
+body .special-head p{
+    color: #1a1e25;
+}
+.special-head p{
+    cursor: default;
+    margin-top: -35px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+@media (max-width: 768px) {
+    .special-head h3{
+        font-size: 60px;
+    }
+}

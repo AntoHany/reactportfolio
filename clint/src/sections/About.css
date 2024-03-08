@@ -1,0 +1,99 @@
+.about{
+    position: relative;
+    height: 100vh;
+}
+.about .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .container .text{
+    flex-basis: 60%;
+    max-width: 600px;
+    text-wrap: wrap;
+    font-size: large;
+}
+.about .container .text span{
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+.about .container .text a{
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.about .container .text a:hover{
+    border-bottom: 1px solid;
+}
+.about .container .image{
+    flex-basis: 30%;
+    position: relative;
+}
+.about .container .image::before,
+.about .container .image::after{
+    content: '';
+    background-color: rgba(128, 128, 128, 0.35);
+    position: absolute;
+    z-index: -1;
+    width: calc(100%);
+    height: calc(100%);
+    border-radius: 50%;
+    box-shadow: 0 0 5px #000000;
+}
+.about .container .image::after{
+    left: -10px;
+}
+.about .container .image::before{
+    right: -10px;
+}
+.about .container .image img{
+    max-width: 100%;
+    width: 500px;
+    border-radius: 50%;
+}
+/* COSTMIZE MOBILE SCREEN */
+@media (max-width: 768px) {
+    .about{
+        height: 100vb;
+        position: relative;
+    }
+    .about::before{
+        content: '';
+        position: absolute;
+        background-color: #0051833e;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        clip-path: polygon(0 0, 100% 100%, 0 100%);
+        z-index: -1;
+    }
+    .about .container {
+        flex-direction: column-reverse;
+    }
+    body .about .container .text{
+        flex-basis: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+    .about .container .image{
+        margin-bottom: 30px;
+    }
+    .about .container .image img{
+        width: 200px;
+        border-radius: 20px;
+    }
+    .about .container .image::after,
+    .about .container .image::before{
+        border-radius: 20px;
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
+    }
+    .about .container .image::after{
+        left: -5px;
+        top: -5px;
+    }
+    .about .container .image::before{
+        right: -5px;
+        bottom: -5px;
+    }
+}

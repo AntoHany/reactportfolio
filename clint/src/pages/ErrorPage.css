@@ -1,0 +1,26 @@
+.error{
+    height: 100vb;
+    background-color: #282c34 !important;
+    background-image: url('../images/image404.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 400px;
+    color: white;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.error div{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+}
+.error span{
+    color: red;
+    font-weight: bold;
+    font-size: 40px;
+}
+.error a{
+    color: #149eca;
+    border-bottom: 2px solid;
+}

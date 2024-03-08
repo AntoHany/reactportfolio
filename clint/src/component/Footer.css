@@ -1,0 +1,74 @@
+/* START FOOTER */
+footer{
+    position: relative;
+    height: 400px;
+    background-image: url('../images/footer.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer p{
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+    text-transform: capitalize;
+}
+footer .in-touch ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+footer .in-touch ul a{
+    margin-top: 20px;
+    font-size: 25px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+footer .in-touch ul a:hover{
+    opacity: 0.7;
+}
+footer div ul.links{
+    text-align: center;
+    padding: 0;
+}
+footer div ul.links a{
+    color: white;
+    margin: 20px 7px;
+    padding: 10px 0;
+    font-size: 24px;
+    text-transform: capitalize;
+    transition: .3s;
+}
+footer div ul.links a:hover{
+    color: #087ea4;
+    border-bottom: 1px solid ;
+}
+footer .text{
+    color: aliceblue;
+    text-shadow: 0px 0px 20px #000, -1px 1px 0px #00e1ff;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;  
+    font-size: 25px;
+    font-weight: bold;  
+}
+/* END FOOTER */
+
+@media (max-width: 768px) {
+    footer .in-touch ul a{
+        font-size: 18px;
+        padding: 0 7px;
+    }
+    footer div ul.links a{
+        font-size: 18px;
+    }
+    footer .text{
+        font-size: 16px;
+    }
+}

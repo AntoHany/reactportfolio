@@ -1,0 +1,89 @@
+.projects{
+    position: relative;
+}
+.projects .bar{
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projects .bar span{
+    z-index: 1;
+    text-transform: capitalize;
+    margin: 0 15px;
+    padding: 7px 5px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.projects .bar span.active{
+    color: #087ea4;
+    border-bottom: 2px solid;
+}
+.projects .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin: 0 10px;
+}
+.projects .card{
+    border-radius: 6px;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    z-index: 1;
+    transition: .5s;
+    overflow: hidden;
+    line-break: anywhere;
+}
+.projects .card:hover{
+    transform: translateY(-15px);
+}
+.projects .image{
+    position: relative;
+}
+.projects .image::before{
+    content: '';
+    position: absolute;
+    background-color: #087ea4;
+    width: 0;
+    height: 3px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .3s;
+}
+.projects .card:hover .image::before{
+    width: 100%;
+}
+.projects .card img{
+    border-radius: 0 0 6px 6px;
+    max-width: 100%;
+}
+.projects .card h3{
+    cursor: default;
+    text-transform: capitalize;
+    font-size: 25px;
+    margin: 7px 0;
+}
+.projects .card p{
+    cursor: default;
+    margin: 4px 0;
+    line-height: 1.5;
+    font-size: 16px;
+}
+.projects .card a{
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.projects .card a:hover{
+    color: #087ea4;
+    border-bottom: 1px solid;
+}
+
+@media (max-width: 768px) {
+    .projects .bar span{
+        margin: 0 10px;
+        padding: 5px 3px;
+        font-size: 16px;
+    }
+}
